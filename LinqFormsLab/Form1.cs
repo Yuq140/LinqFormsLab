@@ -51,9 +51,9 @@ namespace LinqFormsLab {
             };
             CarList.Add(car);
 
-            // Clear textboxes
+            // Clear textboxes and dropdown
             CarName.Clear();
-            CarColor.Clear();
+            CarColor.ResetText();
             Price.Clear();
 
             // Add the last item (the newest item) to the ListBox

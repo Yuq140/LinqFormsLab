@@ -25,7 +25,6 @@
         private void InitializeComponent() {
             this.button1 = new System.Windows.Forms.Button();
             this.CarName = new System.Windows.Forms.TextBox();
-            this.CarColor = new System.Windows.Forms.TextBox();
             this.Price = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,6 +40,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.MyCarsList = new System.Windows.Forms.ListBox();
             this.FilteredList = new System.Windows.Forms.ListBox();
+            this.CarColor = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button1
@@ -59,13 +59,6 @@
             this.CarName.Name = "CarName";
             this.CarName.Size = new System.Drawing.Size(66, 20);
             this.CarName.TabIndex = 1;
-            // 
-            // CarColor
-            // 
-            this.CarColor.Location = new System.Drawing.Point(12, 79);
-            this.CarColor.Name = "CarColor";
-            this.CarColor.Size = new System.Drawing.Size(66, 20);
-            this.CarColor.TabIndex = 2;
             // 
             // Price
             // 
@@ -207,11 +200,32 @@
             this.FilteredList.Size = new System.Drawing.Size(286, 264);
             this.FilteredList.TabIndex = 20;
             // 
+            // CarColor
+            // 
+            this.CarColor.FormattingEnabled = true;
+            this.CarColor.Items.AddRange(new object[] {
+            "Red",
+            "Yellow",
+            "Blue",
+            "Black",
+            "White",
+            "Orange",
+            "Green",
+            "Brown",
+            "Aqua",
+            "Cyan",
+            "Gray"});
+            this.CarColor.Location = new System.Drawing.Point(12, 82);
+            this.CarColor.Name = "CarColor";
+            this.CarColor.Size = new System.Drawing.Size(66, 21);
+            this.CarColor.TabIndex = 21;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(938, 369);
+            this.Controls.Add(this.CarColor);
             this.Controls.Add(this.FilteredList);
             this.Controls.Add(this.MyCarsList);
             this.Controls.Add(this.button8);
@@ -227,7 +241,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Price);
-            this.Controls.Add(this.CarColor);
             this.Controls.Add(this.CarName);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
@@ -241,7 +254,6 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox CarName;
-        private System.Windows.Forms.TextBox CarColor;
         private System.Windows.Forms.TextBox Price;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -257,6 +269,7 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.ListBox MyCarsList;
         private System.Windows.Forms.ListBox FilteredList;
+        private System.Windows.Forms.ComboBox CarColor;
     }
 }
 
